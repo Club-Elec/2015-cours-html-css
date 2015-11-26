@@ -92,8 +92,66 @@
 						<img src="assets/WorldWideWeb.png" alt="World Wide Web" style="border:none;height:500px" />
 					</section>
 				</section>
-			</div>
+				<section>
+					<section>
+						<h3>Le HTML</h3>
+						<ul>
+							<li class="fragment"><em>HyperText Markup Language</em></li>
+							<li class="fragment">Permet de décrire le contenu d'une page Web</li>
+							<li class="fragment">Tous les sites Web utilisent du HTML</li>
+							<li class="fragment">HTML5 sorti en octobre 2014</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Et concrètement ?</h3>
 
+						<p>Squelette d'une page Web :</p>
+
+						<pre><code data-trim>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Ma super page Web</title>
+    &lt;/head&gt;
+    &lt;body&gt;
+        Hello world!
+    &lt;/body&gt;
+&lt;/html&gt;
+						</code></pre>
+					</section>
+					<section>
+						<h3>Un peu plus loin</h3>
+						<pre><code data-trim style="max-height:700px">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Ma super page Web&lt;/title&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;link rel="stylesheet" href="design.css" /&gt;
+        &lt;script src="script.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;section&gt;
+            &lt;h1&gt;Ma section&lt;/h1&gt;
+            &lt;article&gt;
+                &lt;h2&gt;Mon premier article&lt;/h2&gt;
+                &lt;p&gt;Hello world!&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article&gt;
+                &lt;h2&gt;Mon second article&lt;/h2&gt;
+                &lt;p&gt;Hello world!²&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/section&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+						</code></pre>
+					</section>
+					<section>
+						<h3>Tada !</h3>
+						<iframe src="assets/examples/ex1.html" style="background:white;width:70%;height:250px;"></iframe>
+					</section>
+				</section>
+			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
