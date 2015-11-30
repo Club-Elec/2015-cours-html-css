@@ -103,6 +103,18 @@
 						</ul>
 					</section>
 					<section>
+						<h3>Un langage balisé</h3>
+						<p class="fragment">Balises ouvrantes/fermantes</p>
+						<code data-trim>
+<span class="fragment">&lt;</span><span class="fragment">html</span><span class="fragment">&gt;</span><span class="fragment">[mon contenu...]</span><span class="fragment">&lt;</span><span class="fragment" style="color:red">/</span><span class="fragment">html</span><span class="fragment">&gt;</span>
+						</code>
+						<p>&nbsp;</p>
+						<p class="fragment">Balises auto-fermantes</p>
+						<code data-trim>
+<span class="fragment">&lt;</span><span class="fragment">link</span><span class="fragment"> rel="stylesheet" href="design.css" </span><span class="fragment" style="color:red">/</span><span class="fragment">&gt;</span>
+						</code>
+					</section>
+					<section>
 						<h3>Et concrètement ?</h3>
 
 						<p>Squelette d'une page Web :</p>
@@ -149,6 +161,96 @@
 					<section>
 						<h3>Tada !</h3>
 						<iframe src="assets/examples/ex1.html" style="background:white;width:70%;height:250px;"></iframe>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Les outils</h3>
+						<div class="fragment" style="width:50%;float:left"><img src="assets/firefox-logo.png" alt="Firefox" style="border:none;background:none;width:250px;" /><br>
+						<small>Un navigateur (ex : Firefox, Chrome)</small></div>
+						<div class="fragment" style="width:50%;float:right"><img src="assets/notepad-plus-plus-logo.png" alt="Notepad++" style="border:none;background:none;width:250px;" /><br>
+						<small>Un éditeur de text (ex : Notepad++, gedit, Sublime Text, bloc-note)</small></div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Let's code!</h2>
+					</section>
+					<section>
+						<h3>Énoncé</h3>
+						<iframe src="assets/examples/ex2.html" style="background:white;width:70%;height:250px;"></iframe><br>
+						<small><a href="assets/examples/ex2.html" target="_blank">Open</a></small>
+					</section>
+					<section>
+						<h3>Corrigé</h3>
+						<pre><code data-trim>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Hello world&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        Hello world!
+    &lt;/body&gt;
+&lt;/html&gt;
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Un code mieux organisé</h3>
+						<ul style="list-style:none;font-size:90%">
+							<li class="fragment"><code>&lt;section&gt;</code> permet de fractionner une page</li>
+							<li class="fragment"><code>&lt;article&gt;</code> permet de définir des éléments d'une section</li>
+							<li class="fragment"><code>&lt;p&gt;</code> permet de définir un paragraphe</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Des titres pour mieux se repérer</h3>
+						<ul style="font-size:90%">
+							<li class="fragment">Démarrent une section et/ou un article</li>
+							<li class="fragment"><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>... en fonction de l'importance</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Énoncé</h3>
+						<iframe src="assets/examples/ex3.html" style="background:white;width:70%;height:470px;"></iframe><br>
+						<small><a href="assets/examples/ex3.html" target="_blank">Open</a></small>
+					</section>
+					<section>
+						<h3>Corrigé</h3>
+						<pre><code data-trim style="max-height:900px;font-size:90%;height:500px;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Hello world&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;section&gt;
+            &lt;h1&gt;Ma section&lt;/h1&gt;
+            &lt;article&gt;
+                &lt;h2&gt;Un premier article&lt;/h2&gt;
+                &lt;p&gt;Hello world!&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article&gt;
+                &lt;h2&gt;Un second article&lt;/h2&gt;
+                &lt;p&gt;Hello world!²&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/section&gt;
+        &lt;section&gt;
+            &lt;h1&gt;Mon autre section&lt;/h1&gt;
+            &lt;article&gt;
+                &lt;h2&gt;Encore un premier article...&lt;/h2&gt;
+                &lt;p&gt;... encore "Hello world!"&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article&gt;
+                &lt;h2&gt;Et encore un second article&lt;/h2&gt;
+                &lt;p&gt;Et un dernier "Hello world!" (ça devient répétitif)&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/section&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+						</code></pre>
 					</section>
 				</section>
 			</div>
