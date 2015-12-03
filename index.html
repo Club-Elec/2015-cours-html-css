@@ -170,6 +170,14 @@
 						<small>Un navigateur (ex : Firefox, Chrome)</small></div>
 						<div class="fragment" style="width:50%;float:right"><img src="assets/notepad-plus-plus-logo.png" alt="Notepad++" style="border:none;background:none;width:250px;" /><br>
 						<small>Un éditeur de text (ex : Notepad++, gedit, Sublime Text, bloc-note)</small></div>
+						<aside class="notes">
+						Penser à mentionner :
+						<ul>
+							<li>Écrire un fichier HTML</li>
+							<li>L'extension</li>
+							<li>La convention du index.html</li>
+						</ul>
+						</aside>
 					</section>
 				</section>
 				<section>
@@ -252,6 +260,97 @@
 &lt;/html&gt;
 						</code></pre>
 					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Les liens</h2>
+						<ul>
+							<li class="fragment">Permettent de naviguer d'une page à une autre</li>
+							<li class="fragment">Une balise : <code>&lt;a&gt; ... &lt;/a&gt;</code></li>
+						</ul>
+						<pre class="fragment"><code data-trim>
+&lt;a href="http://www.example.com"&gt;Voir mon site&lt;/a&gt;
+&lt;a href="page2.html"&gt;Aller à la page 2&lt;/a&gt;
+						</code></pre>
+					</section>
+					<section>
+						<h3>Énoncé</h3>
+						<iframe src="assets/examples/ex4.html" style="background:white;width:70%;"></iframe><br>
+						<small><a href="assets/examples/ex4.html" target="_blank">Open</a></small>
+					</section>
+					<section>
+						<h3>Corrigé</h3>
+						<pre><code data-trim>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Hello world&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;a href="http://www.duckduckgo.com"&gt;Quack&lt;/a&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Aller plus loin</h1>
+					</section>
+					<section>
+						<h3>Les commentaires</h3>
+						<ul>
+							<li class="fragment">Ignoré par le navigateur</li>
+							<li class="fragment">Permet d'annoter son code</li>
+							<li class="fragment"><code>&lt;<span class="fragment highlight-red">!-- </span>[mon commentaire...] <span class="fragment highlight-red">--</span>&gt;</code></li>
+						</ul>
+						<pre class="fragment"><code data-trim>
+&lt;section&gt;
+    &lt;!-- Pemière section, sert à... --&gt;
+    &lt;h1&gt;Ma section&lt;/h1&gt;
+    &lt;article&gt;
+        &lt;h2&gt;Un premier article&lt;/h2&gt;
+        &lt;p&gt;Hello world!&lt;/p&gt;
+    &lt;/article&gt;
+						</code></pre>
+					</section>
+					<section>
+						<h3>Les attributs</h3>
+						<ul>
+							<li class="fragment">Données aditionnelles ("paramètres") d'une balise</li>
+							<li class="fragment">Se trouve à l'intérieur d'une balise</li>
+								<pre class="fragment" style="width:100%"><code data-trim>
+&lt;a href="http://www.example.com" id="monlien" target="_blank"&gt;Mon super lien&lt;/a&gt;
+								</code></pre>
+							</li>
+							<li class="fragment">Deux cas spéciaux :
+								<ul>
+									<li><code>class</code> identifie un élément</li>
+									<li><code>id</code> identifie de façon unique un élément</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Les balises meta</h3>
+						<ul style="font-size:90%">
+							<li class="fragment">Permet d'ajouter des données supplémentaires à la page</li>
+							<li class="fragment">Interprété par le navigateur...</li>
+							<li class="fragment">... mais pas affiché !</li>
+							<li class="fragment">Se place dans le <code style="font-size:80%">&lt;head&gt;&lt;/head&gt;</code>
+							<li class="fragment"><code style="font-size:80%">&lt;meta name="description" content="Mon superbe site !"&gt;</code></li>
+							<li class="fragment">L'intrus : <code style="font-size:80%">&lt;meta charset="utf-8"&gt;</code></li>
+						</ul>
+						<pre class="fragment"><code data-trim>
+&lt;head&gt;
+    &lt;title&gt;Mon super site&lt;/title&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="description" content="Bienvenue sur mon site ! :-)"&gt;
+    &lt;meta name="author" content="Brendan Abolivier"&gt;
+&lt;/head&gt;
+						</code></pre>
+					</section>
+
 				</section>
 			</div>
 		</div>
