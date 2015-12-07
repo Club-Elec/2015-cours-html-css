@@ -1,125 +1,125 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-		<title>Club Elec/Digital Design - Initiation au HTML et au CSS</title>
+        <title>Club Elec/Digital Design - Initiation au HTML et au CSS</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/sky.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
 
-	<body>
+    <body>
 
-		<div class="reveal">
+        <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<section>
-						<img src="assets/logo-club-elec.png" alt="Logo Club Elec" width="200px" style="border:none" /> <img src="assets/logo-digital-design.png" alt="Logo Digital Design" width="200px" style="margin-left:75px;border:none" />
-						<h3>Initiation au HTML et au CSS</h3>
-						<p>Brendan Abolivier - <em>Club Elec</em><br>
-						Konstantin Sidorenko - <em>Digital Design</em></p>
-					</section>
-					<section>
-						<img src="assets/brendan-500.jpg" width="250px" style="border:none;border-radius:250px" />
-						<h2>Brendan Abolivier</h2>
-						<ul style="text-align:center;list-style:none">
-							<li>Étudiant en CIR3</li>
-							<li>Alternant chez Thomson Video Networks</li>
-						<ul>
-						<p><small><a href="https://keybase.io/brenabolivier">keybase.io/BrenAbolivier</a> - <a href="http://www.brendanabolivier.com/">www.brendanabolivier.com</a></small></p>
-					</section>
-					<section>
-						<img src="assets/konstantin-500.jpg" width="250px" style="border:none;border-radius:250px" />
-						<h2>Konstantin Sidorenko</h2>
-						<ul style="text-align:center;list-style:none">
-							<li>Étudiant en CIR3</li>
-							<li>Alternant chez Yellowcake</li>
-						<ul>
-						<p><small><a href="http://www.konstantin-sidorenko.fr/">www.konstantin-sidorenko.fr</a></small></p>
-					</section>
-				</section>
-				<section>
-					<h2>Buts de ce cours</h2>
-					<ul>
-						<li class="fragment">Appréhender le développement Web</li>
-						<li class="fragment">Vous apprendre les bases du HTML et du CSS</li>
-						<li class="fragment">Que vous soyez en mesure de réaliser un site simple</li>
-					</ul>
-				</section>
-				<section>
-					<section>
-						<h1>Un peu d'histoire</h1>
-					</section>
-					<section>
-						<h3>Le World Wide Web</h3>
-						<ul>
-							<li class="fragment">Créé en 1989 par <strong>Tim Berners-Lee</strong></li>
-							<img class="fragment" src="assets/tim-berners-lee.jpg" alt="Tim Berners-Lee" />
-							<li class="fragment">Développé au CERN, maintenant géré par le <strong>W3C</strong></li>
-							<li class="fragment">Système <em>hypertexte</em></li>
-						</ul>
-					</section>
-					<section>
-						<h3>Le tout premier navigateur</h3>
-						<img src="assets/WorldWideWeb.png" alt="World Wide Web" style="border:none;height:500px" />
-					</section>
-				</section>
-				<section>
-					<section>
-						<h2>Le HTML</h2>
-						<ul>
-							<li class="fragment"><em>HyperText Markup Language</em></li>
-							<li class="fragment">Permet de décrire le contenu d'une page Web</li>
-							<li class="fragment">Tous les sites Web utilisent du HTML</li>
-							<li class="fragment">HTML5 sorti en octobre 2014</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Un langage balisé</h3>
-						<p class="fragment">Balises ouvrantes/fermantes</p>
-						<code data-trim>
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <section>
+                        <img src="assets/logo-club-elec.png" alt="Logo Club Elec" width="200px" style="border:none" /> <img src="assets/logo-digital-design.png" alt="Logo Digital Design" width="200px" style="margin-left:75px;border:none" />
+                        <h3>Initiation au HTML et au CSS</h3>
+                        <p>Brendan Abolivier - <em>Club Elec</em><br>
+                        Konstantin Sidorenko - <em>Digital Design</em></p>
+                    </section>
+                    <section>
+                        <img src="assets/brendan-500.jpg" width="250px" style="border:none;border-radius:250px" />
+                        <h2>Brendan Abolivier</h2>
+                        <ul style="text-align:center;list-style:none">
+                            <li>Étudiant en CIR3</li>
+                            <li>Alternant chez Thomson Video Networks</li>
+                        <ul>
+                        <p><small><a href="https://keybase.io/brenabolivier">keybase.io/BrenAbolivier</a> - <a href="http://www.brendanabolivier.com/">www.brendanabolivier.com</a></small></p>
+                    </section>
+                    <section>
+                        <img src="assets/konstantin-500.jpg" width="250px" style="border:none;border-radius:250px" />
+                        <h2>Konstantin Sidorenko</h2>
+                        <ul style="text-align:center;list-style:none">
+                            <li>Étudiant en CIR3</li>
+                            <li>Alternant chez Yellowcake</li>
+                        <ul>
+                        <p><small><a href="http://www.konstantin-sidorenko.fr/">www.konstantin-sidorenko.fr</a></small></p>
+                    </section>
+                </section>
+                <section>
+                    <h2>Buts de ce cours</h2>
+                    <ul>
+                        <li class="fragment">Appréhender le développement Web</li>
+                        <li class="fragment">Vous apprendre les bases du HTML et du CSS</li>
+                        <li class="fragment">Que vous soyez en mesure de réaliser un site simple</li>
+                    </ul>
+                </section>
+                <section>
+                    <section>
+                        <h1>Un peu d'histoire</h1>
+                    </section>
+                    <section>
+                        <h3>Le World Wide Web</h3>
+                        <ul>
+                            <li class="fragment">Créé en 1989 par <strong>Tim Berners-Lee</strong></li>
+                            <img class="fragment" src="assets/tim-berners-lee.jpg" alt="Tim Berners-Lee" />
+                            <li class="fragment">Développé au CERN, maintenant géré par le <strong>W3C</strong></li>
+                            <li class="fragment">Système <em>hypertexte</em></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Le tout premier navigateur</h3>
+                        <img src="assets/WorldWideWeb.png" alt="World Wide Web" style="border:none;height:500px" />
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Le HTML</h2>
+                        <ul>
+                            <li class="fragment"><em>HyperText Markup Language</em></li>
+                            <li class="fragment">Permet de décrire le contenu d'une page Web</li>
+                            <li class="fragment">Tous les sites Web utilisent du HTML</li>
+                            <li class="fragment">HTML5 sorti en octobre 2014</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Un langage balisé</h3>
+                        <p class="fragment">Balises ouvrantes/fermantes</p>
+                        <code data-trim>
 <span class="fragment">&lt;</span><span class="fragment">html</span><span class="fragment">&gt;</span><span class="fragment">[mon contenu...]</span><span class="fragment">&lt;</span><span class="fragment" style="color:red">/</span><span class="fragment">html</span><span class="fragment">&gt;</span>
-						</code>
-						<p>&nbsp;</p>
-						<p class="fragment">Balises auto-fermantes</p>
-						<code data-trim>
+                        </code>
+                        <p>&nbsp;</p>
+                        <p class="fragment">Balises auto-fermantes</p>
+                        <code data-trim>
 <span class="fragment">&lt;</span><span class="fragment">link</span><span class="fragment"> rel="stylesheet" href="design.css" </span><span class="fragment" style="color:red">/</span><span class="fragment">&gt;</span>
-						</code>
-					</section>
-					<section>
-						<h3>Et concrètement ?</h3>
+                        </code>
+                    </section>
+                    <section>
+                        <h3>Et concrètement ?</h3>
 
-						<p>Squelette d'une page Web :</p>
+                        <p>Squelette d'une page Web :</p>
 
-						<pre><code data-trim>
+                        <pre><code data-trim>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -129,11 +129,11 @@
         Hello world!
     &lt;/body&gt;
 &lt;/html&gt;
-						</code></pre>
-					</section>
-					<section>
-						<h3>Un peu plus loin</h3>
-						<pre><code data-trim style="max-height:700px">
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Un peu plus loin</h3>
+                        <pre><code data-trim style="max-height:700px">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -156,42 +156,42 @@
         &lt;/section&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-						</code></pre>
-					</section>
-					<section>
-						<h3>Tada !</h3>
-						<iframe src="assets/examples/ex1.html" style="background:white;width:70%;height:250px;"></iframe>
-					</section>
-				</section>
-				<section>
-					<section>
-						<h3>Les outils</h3>
-						<div class="fragment" style="width:50%;float:left"><img src="assets/firefox-logo.png" alt="Firefox" style="border:none;background:none;width:250px;" /><br>
-						<small>Un navigateur (ex : Firefox, Chrome)</small></div>
-						<div class="fragment" style="width:50%;float:right"><img src="assets/notepad-plus-plus-logo.png" alt="Notepad++" style="border:none;background:none;width:250px;" /><br>
-						<small>Un éditeur de text (ex : Notepad++, gedit, Sublime Text, bloc-note)</small></div>
-						<aside class="notes">
-						Penser à mentionner :
-						<ul>
-							<li>Écrire un fichier HTML</li>
-							<li>L'extension</li>
-							<li>La convention du index.html</li>
-						</ul>
-						</aside>
-					</section>
-				</section>
-				<section>
-					<section>
-						<h2>Let's code!</h2>
-					</section>
-					<section>
-						<h3>Énoncé</h3>
-						<iframe src="assets/examples/ex2.html" style="background:white;width:70%;height:250px;"></iframe><br>
-						<small><a href="assets/examples/ex2.html" target="_blank">Open</a></small>
-					</section>
-					<section>
-						<h3>Corrigé</h3>
-						<pre><code data-trim>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Tada !</h3>
+                        <iframe src="assets/examples/ex1.html" style="background:white;width:70%;height:250px;"></iframe>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h3>Les outils</h3>
+                        <div class="fragment" style="width:50%;float:left"><img src="assets/firefox-logo.png" alt="Firefox" style="border:none;background:none;width:250px;" /><br>
+                        <small>Un navigateur (ex : Firefox, Chrome)</small></div>
+                        <div class="fragment" style="width:50%;float:right"><img src="assets/notepad-plus-plus-logo.png" alt="Notepad++" style="border:none;background:none;width:250px;" /><br>
+                        <small>Un éditeur de text (ex : Notepad++, gedit, Sublime Text, bloc-note)</small></div>
+                        <aside class="notes">
+                        Penser à mentionner :
+                        <ul>
+                            <li>Écrire un fichier HTML</li>
+                            <li>L'extension</li>
+                            <li>La convention du index.html</li>
+                        </ul>
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Let's code!</h2>
+                    </section>
+                    <section>
+                        <h3>Énoncé</h3>
+                        <iframe src="assets/examples/ex2.html" style="background:white;width:70%;height:250px;"></iframe><br>
+                        <small><a href="assets/examples/ex2.html" target="_blank">Open</a></small>
+                    </section>
+                    <section>
+                        <h3>Corrigé</h3>
+                        <pre><code data-trim>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -201,33 +201,33 @@
         Hello world!
     &lt;/body&gt;
 &lt;/html&gt;
-						</code></pre>
-					</section>
-				</section>
-				<section>
-					<section>
-						<h3>Un code mieux organisé</h3>
-						<ul style="list-style:none;font-size:90%">
-							<li class="fragment"><code>&lt;section&gt;</code> permet de fractionner une page</li>
-							<li class="fragment"><code>&lt;article&gt;</code> permet de définir des éléments d'une section</li>
-							<li class="fragment"><code>&lt;p&gt;</code> permet de définir un paragraphe</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Des titres pour mieux se repérer</h3>
-						<ul style="font-size:90%">
-							<li class="fragment">Démarrent une section et/ou un article</li>
-							<li class="fragment"><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>... en fonction de l'importance</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Énoncé</h3>
-						<iframe src="assets/examples/ex3.html" style="background:white;width:70%;height:470px;"></iframe><br>
-						<small><a href="assets/examples/ex3.html" target="_blank">Open</a></small>
-					</section>
-					<section>
-						<h3>Corrigé</h3>
-						<pre><code data-trim style="max-height:900px;font-size:90%;height:500px;">
+                        </code></pre>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h3>Un code mieux organisé</h3>
+                        <ul style="list-style:none;font-size:90%">
+                            <li class="fragment"><code>&lt;section&gt;</code> permet de fractionner une page</li>
+                            <li class="fragment"><code>&lt;article&gt;</code> permet de définir des éléments d'une section</li>
+                            <li class="fragment"><code>&lt;p&gt;</code> permet de définir un paragraphe</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Des titres pour mieux se repérer</h3>
+                        <ul style="font-size:90%">
+                            <li class="fragment">Démarrent une section et/ou un article</li>
+                            <li class="fragment"><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>... en fonction de l'importance</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Énoncé</h3>
+                        <iframe src="assets/examples/ex3.html" style="background:white;width:70%;height:470px;"></iframe><br>
+                        <small><a href="assets/examples/ex3.html" target="_blank">Open</a></small>
+                    </section>
+                    <section>
+                        <h3>Corrigé</h3>
+                        <pre><code data-trim style="max-height:900px;font-size:90%;height:500px;">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -258,29 +258,29 @@
         &lt;/section&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-						</code></pre>
-					</section>
-				</section>
-				<section>
-					<section>
-						<h3>Les liens</h3>
-						<ul>
-							<li class="fragment">Permettent de naviguer d'une page à une autre</li>
-							<li class="fragment">Une balise : <code>&lt;a&gt; ... &lt;/a&gt;</code></li>
-						</ul>
-						<pre class="fragment"><code data-trim>
+                        </code></pre>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h3>Les liens</h3>
+                        <ul>
+                            <li class="fragment">Permettent de naviguer d'une page à une autre</li>
+                            <li class="fragment">Une balise : <code>&lt;a&gt; ... &lt;/a&gt;</code></li>
+                        </ul>
+                        <pre class="fragment"><code data-trim>
 &lt;a href="http://www.example.com"&gt;Voir mon site&lt;/a&gt;
 &lt;a href="page2.html"&gt;Aller à la page 2&lt;/a&gt;
-						</code></pre>
-					</section>
-					<section>
-						<h3>Énoncé</h3>
-						<iframe src="assets/examples/ex4.html" style="background:white;width:70%;"></iframe><br>
-						<small><a href="assets/examples/ex4.html" target="_blank">Open</a></small>
-					</section>
-					<section>
-						<h3>Corrigé</h3>
-						<pre><code data-trim>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Énoncé</h3>
+                        <iframe src="assets/examples/ex4.html" style="background:white;width:70%;"></iframe><br>
+                        <small><a href="assets/examples/ex4.html" target="_blank">Open</a></small>
+                    </section>
+                    <section>
+                        <h3>Corrigé</h3>
+                        <pre><code data-trim>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -290,21 +290,21 @@
         &lt;a href="http://www.duckduckgo.com"&gt;Quack&lt;/a&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-						</code></pre>
-					</section>
-				</section>
-				<section>
-					<section>
-						<h2>Aller plus loin</h2>
-					</section>
-					<section>
-						<h3>Les commentaires</h3>
-						<ul>
-							<li class="fragment">Ignoré par le navigateur</li>
-							<li class="fragment">Permet d'annoter son code</li>
-							<li class="fragment"><code>&lt;<span class="fragment highlight-red">!-- </span>[mon commentaire...] <span class="fragment highlight-red">--</span>&gt;</code></li>
-						</ul>
-						<pre class="fragment"><code data-trim>
+                        </code></pre>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Aller plus loin</h2>
+                    </section>
+                    <section>
+                        <h3>Les commentaires</h3>
+                        <ul>
+                            <li class="fragment">Ignoré par le navigateur</li>
+                            <li class="fragment">Permet d'annoter son code</li>
+                            <li class="fragment"><code>&lt;<span class="fragment highlight-red">!-- </span>[mon commentaire...] <span class="fragment highlight-red">--</span>&gt;</code></li>
+                        </ul>
+                        <pre class="fragment"><code data-trim>
 &lt;section&gt;
     &lt;!-- Pemière section, sert à... --&gt;
     &lt;h1&gt;Ma section&lt;/h1&gt;
@@ -312,90 +312,131 @@
         &lt;h2&gt;Un premier article&lt;/h2&gt;
         &lt;p&gt;Hello world!&lt;/p&gt;
     &lt;/article&gt;
-						</code></pre>
-					</section>
-					<section>
-						<h3>Les attributs</h3>
-						<ul>
-							<li class="fragment">Données aditionnelles ("paramètres") d'une balise</li>
-							<li class="fragment">Se trouve à l'intérieur d'une balise</li>
-								<pre class="fragment" style="width:100%"><code data-trim>
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Les attributs</h3>
+                        <ul>
+                            <li class="fragment">Données aditionnelles ("paramètres") d'une balise</li>
+                            <li class="fragment">Se trouve à l'intérieur d'une balise</li>
+                                <pre class="fragment" style="width:100%"><code data-trim>
 &lt;a href="http://www.example.com" id="monlien" target="_blank"&gt;Mon super lien&lt;/a&gt;
-								</code></pre>
-							</li>
-							<li class="fragment">Deux cas spéciaux :
-								<ul>
-									<li><code>class</code> identifie un élément</li>
-									<li><code>id</code> identifie de façon unique un élément</li>
-								</ul>
-							</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Les balises meta</h3>
-						<ul style="font-size:90%">
-							<li class="fragment">Permet d'ajouter des données supplémentaires à la page</li>
-							<li class="fragment">Interprété par le navigateur...</li>
-							<li class="fragment">... mais pas affiché !</li>
-							<li class="fragment">Se place dans le <code style="font-size:80%">&lt;head&gt;&lt;/head&gt;</code>
-							<li class="fragment"><code style="font-size:80%">&lt;meta name="description" content="Mon superbe site !"&gt;</code></li>
-							<li class="fragment">L'intrus : <code style="font-size:80%">&lt;meta charset="utf-8"&gt;</code></li>
-						</ul>
-						<pre class="fragment"><code data-trim>
+                                </code></pre>
+                            </li>
+                            <li class="fragment">Deux cas spéciaux :
+                                <ul>
+                                    <li><code>class</code> identifie un élément</li>
+                                    <li><code>id</code> identifie de façon unique un élément</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Les balises meta</h3>
+                        <ul style="font-size:90%">
+                            <li class="fragment">Permet d'ajouter des données supplémentaires à la page</li>
+                            <li class="fragment">Interprété par le navigateur...</li>
+                            <li class="fragment">... mais pas affiché !</li>
+                            <li class="fragment">Se place dans le <code style="font-size:80%">&lt;head&gt;&lt;/head&gt;</code>
+                            <li class="fragment"><code style="font-size:80%">&lt;meta name="description" content="Mon superbe site !"&gt;</code></li>
+                            <li class="fragment">L'intrus : <code style="font-size:80%">&lt;meta charset="utf-8"&gt;</code></li>
+                        </ul>
+                        <pre class="fragment"><code data-trim>
 &lt;head&gt;
     &lt;title&gt;Mon super site&lt;/title&gt;
     &lt;meta charset="utf-8"&gt;
     &lt;meta name="description" content="Bienvenue sur mon site ! :-)"&gt;
     &lt;meta name="author" content="Brendan Abolivier"&gt;
 &lt;/head&gt;
-						</code></pre>
-					</section>
-				</section>
-				<section>
-					<h2>Le CSS</h2>
-					<ul>
-						<li class="fragment"><em>Cascading Style Sheet</em></li>
-						<li class="fragment">Définit le style d'une page</li>
-						<li class="fragment">Est arrivé après le HTML</li>
-						<li class="fragment">Nécessite du HTML</li>
-					</ul>
-					<aside class="notes">
-						<ul>
-							<li>Est arrivé historiquement (premières traces vers 1995) après le HTML (1989, avec le WWW) pour répondre au besoin d'une possibilité de changer le design d'une page afin de pouvoir se démarquer des autres et d'être plus agréable à l'oeil.</li>
-							<li>HTML = contenu ; CSS = contenant</li>
-						</ul>
-					</aside>
-				</section>
-			</div>
-		</div>
+                        </code></pre>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Le CSS</h2>
+                        <ul>
+                            <li class="fragment"><em>Cascading Style Sheet</em></li>
+                            <li class="fragment">Définit le style d'une page</li>
+                            <li class="fragment">Est arrivé après le HTML</li>
+                            <li class="fragment">Nécessite du HTML</li>
+                        </ul>
+                        <aside class="notes">
+                            <ul>
+                                <li>Est arrivé historiquement (premières traces vers 1995) après le HTML (1989, avec le WWW) pour répondre au besoin d'une possibilité de changer le design d'une page afin de pouvoir se démarquer des autres et d'être plus agréable à l'oeil.</li>
+                                <li>HTML = contenu ; CSS = contenant</li>
+                            </ul>
+                        </aside>
+                    </section>
+                    <section>
+                        <h3>Exemple de style</h3>
+                        <pre><code data-trim>
+h1 {
+    color: grey;
+    font-size: 150%;
+}
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+#id {
+    height: 500px;
+    width: 75%;
+    margin: auto;
+}
 
-		<script>
+.class {
+    background-color: grey;
+}
+                        </code></pre>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h3>Les sélecteurs</h3>
+                        <p>Un sélecteur peut être...</p>
+                        <p class="fragment">... un nom de balise (<code>h1</code>)<br>
+                        <span class="fragment">... un attribut "id" (<code>#id</code>)</span><br>
+                        <span class="fragment">... un attribut "class" (<code>.class</code>)</span></p>
+                    </section>
+                    <section>
+                        <h3>Les pseudo-classes</h3>
+                        <p class="fragment">Certains éléments ne peuvent pas être sélectionnés par un sélecteur classique</p>
+                        <pre class="fragment"><code data-trim>
+a:hover {
+    color: pink;
+}
+                        </code></pre>
+                        <iframe src="assets/examples/ex5.html" style="background:white;height:50px;width:90%" class="fragment"></iframe>
+                        <p class="fragment" style="font-size:90%">Exemples : <code>visited</code>, <code>first-child</code>, <code>last-child</code>, <code>checked</code>...</p>
+                    </section>
+                </section>
+            </div>
+        </div>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: false,
-				progress: true,
-				history: true,
-				center: true,
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+        <script>
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: false,
+                progress: true,
+                history: true,
+                center: true,
 
-		</script>
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-	</body>
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+
+    </body>
 </html>
