@@ -490,6 +490,25 @@ section {
                 </section>
                 <section>
                     <section>
+                        <h3>Les sélecteurs composés</h3>
+                        <ul style="font-size:80%">
+                            <li class="fragment">
+                                <code>sélecteur1 sélecteur2</code> : sélecteur2 dans sélecteur1<pre><code data-trim>
+section article { ... }
+                                </code></pre>
+                            </li>
+                            <li class="fragment">
+                                <code>sélecteur1sélecteur2</code> : sélecteur1 de type sélecteur2<pre><code data-trim>
+article.article1 { ... }
+                                </code></pre>
+                            </li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <pre class="fragment"><code>
+section.section1 article { ... }
+                        </code></pre>
+                    </section>
+                    <section>
                         <h3>Les pseudo-classes</h3>
                         <p class="fragment">Certains éléments ne peuvent pas être sélectionnés par un sélecteur classique</p>
                         <pre class="fragment"><code data-trim>
@@ -501,6 +520,72 @@ a:hover {
                         <p class="fragment" style="font-size:90%">Exemples : <code>visited</code>, <code>first-child</code>, <code>last-child</code>, <code>checked</code>...</p>
                     </section>
                     <section>
+                        <h3>Précision du sélecteur</h3>
+                        <p>Le navigateur appliquera toujours la règle la plus précise.</p>
+                        <p style="font-size:80%"><code>article</code> < <code>article.maclasse</code> < <code>section article.maclasse</code></p>
+                    </section>
+                    <section>
+                        <h3>Énoncé</h3>
+                        <iframe src="assets/examples/ex7.html" style="background:white;height:350px;width:100%"></iframe>
+                        <small><a href="assets/examples/ex7.html" target="_blank">Open</a></small>
+                    </section>
+                    <section>
+                        <h3>Corrigé (HTML)</h3>
+                        <pre><code data-trim style="max-height:900px;font-size:90%;height:500px;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Hello world&lt;/title&gt;
+        &lt;meta charset="utf8" /&gt;
+        &lt;link rel="stylesheet" href="ex7.css" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Un article pas comme les autres&lt;/h2&gt;
+            &lt;p&gt;Attention, cet article n'est pas dans une section !&lt;/p&gt;
+        &lt;/article&gt;
+        &lt;section&gt;
+            &lt;h1&gt;Ma section&lt;/h1&gt;
+            &lt;article id="top"&gt;
+                &lt;h2&gt;Un premier article&lt;/h2&gt;
+                &lt;p&gt;Hello world!&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article&gt;
+                &lt;h2&gt;Un second article&lt;/h2&gt;
+                &lt;p&gt;Hello world!²&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/section&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Corrigé (CSS)</h3>
+                        <pre><code data-trim style="max-height:900px;font-size:90%;">
+h1 {
+    color: red;
+}
+
+h2 {
+    text-align: center;
+}
+
+section {
+    background-color: grey;
+}
+
+section:hover {
+    background-color: pink;
+}
+
+section article#top {
+    color: green;
+}
+
+section article {
+    color: white;
+}
+                        </code></pre>
                     </section>
                 </section>
             </div>
