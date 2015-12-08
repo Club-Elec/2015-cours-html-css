@@ -1,0 +1,19 @@
+h1 {
+    color: red;
+}
+
+h2 {
+    text-align: center;
+}
+
+section {
+    background-color: grey;
+}
+
+.article1 {
+    color: white;
+}
+
+.article2 {
+    color: green;
+}

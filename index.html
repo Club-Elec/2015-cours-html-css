@@ -232,6 +232,7 @@
 &lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;Hello world&lt;/title&gt;
+        &lt;meta charset="utf8" /&gt;
     &lt;/head&gt;
     &lt;body&gt;
         &lt;section&gt;
@@ -285,6 +286,7 @@
 &lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;Hello world&lt;/title&gt;
+        &lt;meta charset="utf8" /&gt;
     &lt;/head&gt;
     &lt;body&gt;
         &lt;a href="http://www.duckduckgo.com"&gt;Quack&lt;/a&gt;
@@ -414,13 +416,76 @@ h1 {
                         <span class="fragment">... un attribut "id" (<code>#id</code>)</span><br>
                         <span class="fragment">... un attribut "class" (<code>.class</code>)</span></p>
                     </section>
+                </section>
                 <section>
                     <section>
                         <h3>Un peu de mise en page</h3>
                         <p class="fragment" style="font-size:85%">Le texte : <code>font-size</code>, <code>text-align</code>, <code>font-family</code>...</p>
                         <p class="fragment" style="font-size:85%">La couleur : <code>color</code>, <code>background-color</code>, <code>background-image</code>, ...</p>
+                        <p class="fragment" style="font-size:85%">Il y a plusieurs couleurs prédéfinies en CSS : <code>blue</code>, <code>grey</code>, <code>green</code>, <code>white</code>, <code>black</code>, <code>pink</code>, <code>red</code>...</p>
                     </section>
                     <section>
+                        <h3>Énoncé</h3>
+                        <iframe src="assets/examples/ex5.html" style="background:white;height:490px;width:100%"></iframe>
+                        <small><a href="assets/examples/ex5.html" target="_blank">Open</a></small>
+                    </section>
+                    <section>
+                        <h3>Corrigé (HTML)</h3>
+                        <pre><code data-trim style="max-height:900px;font-size:90%;height:500px;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Hello world&lt;/title&gt;
+        &lt;meta charset="utf8" /&gt;
+        &lt;link rel="stylesheet" href="ex5.css" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;section&gt;
+            &lt;h1&gt;Ma section&lt;/h1&gt;
+            &lt;article class="article1"&gt;
+                &lt;h2&gt;Un premier article&lt;/h2&gt;
+                &lt;p&gt;Hello world!&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article class="article2"&gt;
+                &lt;h2&gt;Un second article&lt;/h2&gt;
+                &lt;p&gt;Hello world!²&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/section&gt;
+        &lt;section&gt;
+            &lt;h1&gt;Ma section&lt;/h1&gt;
+            &lt;article class="article1"&gt;
+                &lt;h2&gt;Encore un premier article...&lt;/h2&gt;
+                &lt;p&gt;... encore "Hello world!"&lt;/p&gt;
+
+            &lt;/article&gt;
+            &lt;article class="article2"&gt;
+                &lt;h2&gt;Et encore un second article&lt;/h2&gt;
+                &lt;p&gt;Et un dernier "Hello world!" (ça devient répétitif)&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/section&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h3>Corrigé (CSS)</h3>
+                        <pre><code data-trim style="font-size:90%;">
+h1 {
+    color: red;
+}
+
+section {
+    background-color: grey;
+}
+
+.article1 {
+    color: white;
+}
+
+.article2 {
+    color: green;
+}
+                        </code></pre>
                     </section>
                 </section>
                 <section>
@@ -432,10 +497,11 @@ a:hover {
     color: pink;
 }
                         </code></pre>
-                        <iframe src="assets/examples/ex5.html" style="background:white;height:50px;width:90%" class="fragment"></iframe>
+                        <iframe src="assets/examples/ex6.html" style="background:white;height:50px;width:90%" class="fragment"></iframe>
                         <p class="fragment" style="font-size:90%">Exemples : <code>visited</code>, <code>first-child</code>, <code>last-child</code>, <code>checked</code>...</p>
                     </section>
-                </section>
+                    <section>
+                    </section>
                 </section>
             </div>
         </div>
